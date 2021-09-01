@@ -33,7 +33,7 @@ set ::env(VERILOG_FILES) "\
 set ::env(CLOCK_PORT) "user_clock2"
 set ::env(CLOCK_NET) "mprj.clk"
 
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "40"
 
 ## Internal Macros
 ### Macro Placement
@@ -41,8 +41,16 @@ set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
 
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
-	$script_dir/../../caravel/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/user_proj_example.v"
+	$script_dir/../../verilog/rtl/defines.v \
+	$script_dir/../../verilog/rtl/abs.v \
+	$script_dir/../../verilog/rtl/comparator.v \
+	$script_dir/../../verilog/rtl/reg.v \
+	$script_dir/../../verilog/rtl/signext.v \
+	$script_dir/../../verilog/rtl/multiplier.v \
+	$script_dir/../../verilog/rtl/IIR_Filter.v \
+	$script_dir/../../verilog/rtl/mic_clk.v \
+	$script_dir/../../verilog/rtl/MAF_Filter.v \
+	$script_dir/../../verilog/rtl/sonarOnChip.v"
 
 set ::env(EXTRA_LEFS) "\
 	$script_dir/../../lef/user_proj_example.lef"

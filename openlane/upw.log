@@ -1,0 +1,434 @@
+###############################################
+[36m[INFO]: 
+	___   ____   ___  ____   _       ____  ____     ___
+	/   \ |    \ /  _]|    \ | |     /    ||    \   /  _]
+	|     ||  o  )  [_ |  _  || |    |  o  ||  _  | /  [_
+	|  O  ||   _/    _]|  |  || |___ |     ||  |  ||    _]
+	|     ||  | |   [_ |  |  ||     ||  _  ||  |  ||   [_
+	\___/ |__| |_____||__|__||_____||__|__||__|__||_____|
+
+[37m
+[36m[INFO]: Version: N/A[37m
+[36m[INFO]: Running non-interactively[37m
+[36m[INFO]: Using design configuration at /project/openlane/user_project_wrapper/config.tcl[37m
+[36m[INFO]: Sourcing Configurations from /project/openlane/user_project_wrapper/config.tcl[37m
+[36m[INFO]: PDKs root directory: /home/student/openlane/pdks[37m
+[36m[INFO]: PDK: sky130A[37m
+[36m[INFO]: Setting PDKPATH to /home/student/openlane/pdks/sky130A[37m
+[36m[INFO]: Standard Cell Library: sky130_fd_sc_hd[37m
+[36m[INFO]: Sourcing Configurations from /project/openlane/user_project_wrapper/config.tcl[37m
+[33m[WARNING]: Removing exisiting run /project/openlane/user_project_wrapper/runs/user_project_wrapper[37m
+[36m[INFO]: Current run directory is /project/openlane/user_project_wrapper/runs/user_project_wrapper[37m
+[36m[INFO]: Preparing LEF Files[37m
+[36m[INFO]: Extracting the number of available metal layers from /home/student/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef[37m
+[36m[INFO]: The number of available metal layers is 6[37m
+[36m[INFO]: The available metal layers are li1 met1 met2 met3 met4 met5[37m
+[36m[INFO]: Merging LEF Files...[37m
+mergeLef.py : Merging LEFs
+sky130_ef_sc_hd__decap_12.lef: SITEs matched found: 0
+sky130_ef_sc_hd__decap_12.lef: MACROs matched found: 1
+sky130_ef_sc_hd__fakediode_2.lef: SITEs matched found: 0
+sky130_ef_sc_hd__fakediode_2.lef: MACROs matched found: 1
+sky130_ef_sc_hd__fill_12.lef: SITEs matched found: 0
+sky130_ef_sc_hd__fill_12.lef: MACROs matched found: 1
+sky130_fd_sc_hd.lef: SITEs matched found: 0
+sky130_fd_sc_hd.lef: MACROs matched found: 437
+mergeLef.py : Merging LEFs complete
+mergeLef.py : Merging LEFs
+user_proj_example.lef: SITEs matched found: 0
+user_proj_example.lef: MACROs matched found: 1
+mergeLef.py : Merging LEFs complete
+[36m[INFO]: Merging the following extra LEFs:  /project/openlane/user_project_wrapper/../../lef/user_proj_example.lef[37m
+[36m[INFO]: Trimming Liberty...[37m
+[36m[INFO]: Generating Exclude List...[37m
+[36m[INFO]: Storing configs into config.tcl ...[37m
+[36m[INFO]: Preparation complete[37m
+[36m[INFO]: Running Synthesis...[37m
+[36m[INFO]: current step index: 1[37m
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Wolf <claire@symbioticeda.com>          |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/defines.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/defines.v' to AST representation.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/abs.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/abs.v' to AST representation.
+Generating RTLIL representation for module `\Abs'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/comparator.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/comparator.v' to AST representation.
+Generating RTLIL representation for module `\comparator'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/reg.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/reg.v' to AST representation.
+Generating RTLIL representation for module `\REG'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/signext.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/signext.v' to AST representation.
+Generating RTLIL representation for module `\signext'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/multiplier.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/multiplier.v' to AST representation.
+Generating RTLIL representation for module `\MULTI'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/IIR_Filter.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/IIR_Filter.v' to AST representation.
+Generating RTLIL representation for module `\IIR_Filter'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/mic_clk.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/mic_clk.v' to AST representation.
+Generating RTLIL representation for module `\Mic_Clk'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/MAF_Filter.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/MAF_Filter.v' to AST representation.
+Generating RTLIL representation for module `\MAF_FILTER'.
+Generating RTLIL representation for module `\dff'.
+Generating RTLIL representation for module `\adder'.
+Generating RTLIL representation for module `\shifter'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/sonarOnChip.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/sonarOnChip.v' to AST representation.
+Generating RTLIL representation for module `\SonarOnChip'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../caravel/verilog/rtl/defines.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../caravel/verilog/rtl/defines.v' to AST representation.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/user_project_wrapper.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/user_project_wrapper.v' to AST representation.
+Generating RTLIL representation for module `\user_project_wrapper'.
+Successfully finished Verilog frontend.
+
+13. Generating Graphviz representation of design.
+Writing dot description to `/project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/synthesis/hierarchy.dot'.
+Dumping module user_project_wrapper to page 1.
+
+14. Executing HIERARCHY pass (managing design hierarchy).
+
+14.1. Analyzing design hierarchy..
+Top module:  \user_project_wrapper
+
+14.2. Analyzing design hierarchy..
+Top module:  \user_project_wrapper
+Removed 0 unused modules.
+
+15. Printing statistics.
+
+=== user_project_wrapper ===
+
+   Number of wires:                 19
+   Number of wire bits:            637
+   Number of public wires:          19
+   Number of public wire bits:     637
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     SonarOnChip                     1
+
+16. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_project_wrapper..
+
+18. Executing CHECK pass (checking for obvious problems).
+checking module user_project_wrapper..
+found and reported 0 problems.
+
+19. Printing statistics.
+
+=== user_project_wrapper ===
+
+   Number of wires:                 19
+   Number of wire bits:            637
+   Number of public wires:          19
+   Number of public wire bits:     637
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     SonarOnChip                     1
+
+   Area for cell type \SonarOnChip is unknown!
+
+20. Executing Verilog backend.
+Dumping module `\user_project_wrapper'.
+
+End of script. Logfile hash: 5eac369c0e, CPU: user 0.34s system 0.01s, MEM: 21.72 MB peak
+Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+Time spent: 89% 2x stat (0 sec), 5% 24x read_verilog (0 sec), ...
+[36m[INFO]: Changing netlist from 0 to /project/openlane/user_project_wrapper/runs/user_project_wrapper/results/synthesis/user_project_wrapper.synthesis.v[37m
+[36m[INFO]: Running Static Timing Analysis...[37m
+[36m[INFO]: current step index: 2[37m
+OpenSTA 2.3.0 38b40303a8 Copyright (c) 2019, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: /home/student/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib line 31, default_operating_condition ff_n40C_1v95 not found.
+Warning: /home/student/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib line 32, default_operating_condition ss_100C_1v60 not found.
+Warning: /project/openlane/user_project_wrapper/runs/user_project_wrapper/results/synthesis/user_project_wrapper.synthesis.v line 23, module SonarOnChip not found.  Creating black box for mprj.
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+[INFO]: Setting output delay to: 8.0
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+[INFO]: Setting input delay to: 8.0
+set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+[INFO]: Setting load to: 0.01765
+set_load  $cap_load [all_outputs]
+tns 0.00
+wns 0.00
+[36m[INFO]: Synthesis was successful[37m
+[36m[INFO]: Creating a synthesis netlist with PG pins.[37m
+[36m[INFO]: current step index: 3[37m
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Wolf <claire@symbioticeda.com>          |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/defines.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/defines.v' to AST representation.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/abs.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/abs.v' to AST representation.
+Generating RTLIL representation for module `\Abs'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/comparator.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/comparator.v' to AST representation.
+Generating RTLIL representation for module `\comparator'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/reg.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/reg.v' to AST representation.
+Generating RTLIL representation for module `\REG'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/signext.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/signext.v' to AST representation.
+Generating RTLIL representation for module `\signext'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/multiplier.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/multiplier.v' to AST representation.
+Generating RTLIL representation for module `\MULTI'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/IIR_Filter.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/IIR_Filter.v' to AST representation.
+Generating RTLIL representation for module `\IIR_Filter'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/mic_clk.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/mic_clk.v' to AST representation.
+Generating RTLIL representation for module `\Mic_Clk'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/MAF_Filter.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/MAF_Filter.v' to AST representation.
+Generating RTLIL representation for module `\MAF_FILTER'.
+Generating RTLIL representation for module `\dff'.
+Generating RTLIL representation for module `\adder'.
+Generating RTLIL representation for module `\shifter'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/sonarOnChip.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/sonarOnChip.v' to AST representation.
+Generating RTLIL representation for module `\SonarOnChip'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../caravel/verilog/rtl/defines.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../caravel/verilog/rtl/defines.v' to AST representation.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/user_project_wrapper.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/user_project_wrapper.v' to AST representation.
+Generating RTLIL representation for module `\user_project_wrapper'.
+Successfully finished Verilog frontend.
+
+13. Generating Graphviz representation of design.
+Writing dot description to `/project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/synthesis/hierarchy.dot'.
+Dumping module user_project_wrapper to page 1.
+
+14. Executing HIERARCHY pass (managing design hierarchy).
+
+14.1. Analyzing design hierarchy..
+Top module:  \user_project_wrapper
+
+14.2. Analyzing design hierarchy..
+Top module:  \user_project_wrapper
+Removed 0 unused modules.
+
+15. Printing statistics.
+
+=== user_project_wrapper ===
+
+   Number of wires:                 27
+   Number of wire bits:            645
+   Number of public wires:          27
+   Number of public wire bits:     645
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     SonarOnChip                     1
+
+16. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \user_project_wrapper..
+
+18. Executing CHECK pass (checking for obvious problems).
+checking module user_project_wrapper..
+found and reported 0 problems.
+
+19. Printing statistics.
+
+=== user_project_wrapper ===
+
+   Number of wires:                 27
+   Number of wire bits:            645
+   Number of public wires:          27
+   Number of public wire bits:     645
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     SonarOnChip                     1
+
+   Area for cell type \SonarOnChip is unknown!
+
+20. Executing Verilog backend.
+Dumping module `\user_project_wrapper'.
+
+End of script. Logfile hash: 33bd2a764e, CPU: user 0.34s system 0.01s, MEM: 21.75 MB peak
+Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+Time spent: 88% 2x stat (0 sec), 5% 24x read_verilog (0 sec), ...
+[36m[INFO]: Running Floorplanning...[37m
+[36m[INFO]: Running Initial Floorplanning...[37m
+[36m[INFO]: current step index: 4[37m
+OpenROAD 0.9.0 1415572a73
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Warning: /home/student/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib line 31, default_operating_condition tt_025C_1v80 not found.
+Notice 0: Reading LEF file:  /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 441 library cells
+Notice 0: Finished LEF file:  /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/merged_unpadded.lef
+Warning: /project/openlane/user_project_wrapper/runs/user_project_wrapper/results/synthesis/user_project_wrapper.synthesis.v line 23, module SonarOnChip not found.  Creating black box for mprj.
+[INFO IFP-0001] Added 1286 rows of 6323 sites.
+[31m[ERROR]: Floorplanning failed[37m
+[31m[ERROR]: module SonarOnChip not found in /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/merged.lef[37m
+[31m[ERROR]: Check whether EXTRA_LEFS is set appropriately[37m
+[36m[INFO]: Calculating Runtime From the Start...[37m
+[36m[INFO]: Flow failed for user_project_wrapper/01-09_21-32 in 0h0m8s[37m
+[36m[INFO]: Generating Final Summary Report...[37m
+[36m[INFO]: Design Name: user_project_wrapper
+Run Directory: /project/openlane/user_project_wrapper/runs/user_project_wrapper
+Source not found.
+----------------------------------------
+
+LVS Summary:
+Source: /project/openlane/user_project_wrapper/runs/user_project_wrapper/results/lvs/user_project_wrapper.lvs_parsed.gds.log
+Source not found.
+----------------------------------------
+
+Antenna Summary:
+No antenna report found.[37m
+[36m[INFO]: check full report here: /project/openlane/user_project_wrapper/runs/user_project_wrapper/reports/final_summary_report.csv[37m
+[31m[ERROR]: Flow Failed.[37m
+
+    while executing
+"check_floorplan_missing_lef"
+    (procedure "init_floorplan" line 8)
+    invoked from within
+"init_floorplan"
+    (procedure "run_floorplan" line 8)
+    invoked from within
+"run_floorplan"
+    (procedure "run_non_interactive_mode" line 15)
+    invoked from within
+"run_non_interactive_mode {*}$argv"
+    invoked from within
+"if { [info exists flags_map(-interactive)] || [info exists flags_map(-it)] } {
+	puts_info "Running interactively"
+	if { [info exists arg_values(-file)..."
+    (file "/openLANE_flow/flow.tcl" line 223)

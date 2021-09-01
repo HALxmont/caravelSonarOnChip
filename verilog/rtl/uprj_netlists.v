@@ -24,5 +24,13 @@
     `include "gl/user_proj_example.v"
 `else
     `include "user_project_wrapper.v"
-    `include "user_proj_example.v"
+    `include "sonarOnChip.v"
+    `include "IIR_Filter.v"
+		`include "MAF_Filter.v"
+		`include "abs.v"
+		`include "comparator.v"
+		`include "mic_clk.v"
+		`include "multiplier.v"
+		`include "reg.v"
+		`include "signext.v"
 `endif

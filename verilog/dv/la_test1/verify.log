@@ -1,0 +1,5 @@
+make[2]: Entering directory `/home/student/kh/caravel_user_project/verilog/dv/la_test1'
+/ef/apps/bin/riscv32-unknown-elf-gcc -I /home/student/caravel_user_project/caravel -march=rv32imc -mabi=ilp32 -Wl,-Bstatic,-T,/home/student/caravel_user_project/caravel/verilog/dv/caravel/sections.lds,--strip-debug -ffreestanding -nostdlib -o la_test1.elf /home/student/caravel_user_project/caravel/verilog/dv/caravel/start.s la_test1.c
+make[2]: /ef/apps/bin/riscv32-unknown-elf-gcc: Command not found
+make[2]: *** [la_test1.elf] Error 127
+make[2]: Leaving directory `/home/student/kh/caravel_user_project/verilog/dv/la_test1'

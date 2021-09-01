@@ -1,4 +1,3 @@
--ne skywater-pdk 
-bb2f842ac8d1b750677ca25bc71fb312859edb82
--ne open_pdks 
-b06f0f2148abd1b4f8ef60999f9991775cd87a7e
+openlane 880ade4b4d88de8bb4b91e6b80d663c8294c1082
+skywater-pdk bb2f842ac8d1b750677ca25bc71fb312859edb82
+open_pdks b06f0f2148abd1b4f8ef60999f9991775cd87a7e
