@@ -190,7 +190,7 @@ found and reported 0 problems.
 20. Executing Verilog backend.
 Dumping module `\user_project_wrapper'.
 
-End of script. Logfile hash: 5eac369c0e, CPU: user 0.34s system 0.01s, MEM: 21.72 MB peak
+End of script. Logfile hash: 5eac369c0e, CPU: user 0.34s system 0.03s, MEM: 21.72 MB peak
 Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
 Time spent: 89% 2x stat (0 sec), 5% 24x read_verilog (0 sec), ...
 [36m[INFO]: Changing netlist from 0 to /project/openlane/user_project_wrapper/runs/user_project_wrapper/results/synthesis/user_project_wrapper.synthesis.v[37m
@@ -378,7 +378,7 @@ found and reported 0 problems.
 20. Executing Verilog backend.
 Dumping module `\user_project_wrapper'.
 
-End of script. Logfile hash: 33bd2a764e, CPU: user 0.34s system 0.01s, MEM: 21.75 MB peak
+End of script. Logfile hash: 33bd2a764e, CPU: user 0.34s system 0.02s, MEM: 21.76 MB peak
 Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
 Time spent: 88% 2x stat (0 sec), 5% 24x read_verilog (0 sec), ...
 [36m[INFO]: Running Floorplanning...[37m
@@ -399,7 +399,7 @@ Warning: /project/openlane/user_project_wrapper/runs/user_project_wrapper/result
 [31m[ERROR]: module SonarOnChip not found in /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/merged.lef[37m
 [31m[ERROR]: Check whether EXTRA_LEFS is set appropriately[37m
 [36m[INFO]: Calculating Runtime From the Start...[37m
-[36m[INFO]: Flow failed for user_project_wrapper/01-09_21-32 in 0h0m8s[37m
+[36m[INFO]: Flow failed for user_project_wrapper/02-09_00-22 in 0h0m9s[37m
 [36m[INFO]: Generating Final Summary Report...[37m
 [36m[INFO]: Design Name: user_project_wrapper
 Run Directory: /project/openlane/user_project_wrapper/runs/user_project_wrapper
